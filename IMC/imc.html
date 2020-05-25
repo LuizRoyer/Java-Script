@@ -1,0 +1,31 @@
+<html>
+	<head>
+	<title> Calculo do IMC</title>
+	<link rel="stylesheet" type="text/css" href="css/imc.css" media="all"/>
+	<script type="text/javascript" src="js/imc.js"> </script>
+	</head>
+	<body>
+		<img id="imc" src="img/imc.png">
+			
+		<form id="formulario">
+			<fieldset>
+				<legend>Cálculo do IMC</legend>
+				
+				<label for="kilos">Kilos:</label>
+				<input type="text" name="kilos"/>
+				
+				<label for="metros">Metros:</label>
+				<input type="text" name="metros"/>
+				
+				<label for="centimetros">Cm:</label>
+				<input type="text" name="centimetros"/>
+				
+				<label for="imc">IMC:</label>
+				<input type="text" name="imc" disabled="disabled"/>
+				</p>
+			<a href ="#" onclick="calcularIMC()"> Calcular</a>
+			</fieldset>		
+		</form>		
+		<img id="tabela" src="img/tabela.png"/>
+	</body>
+</html>
