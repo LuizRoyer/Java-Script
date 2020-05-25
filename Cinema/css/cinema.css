@@ -1,0 +1,15 @@
+body{ background-color: rgba(228, 226, 226, 0.815);}
+
+#topo{ margin:100px;}
+
+#cinema{
+  max-width:600px;
+  max-height:1000px;
+  margin-left: 200px;
+
+}
+h2{ margin-left: 350px;}
+#poltronas{
+    max-width:300px;
+    max-height:100px;
+  }
