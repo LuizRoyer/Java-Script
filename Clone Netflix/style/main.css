@@ -1,0 +1,111 @@
+:root {
+    /*variaveis de ambiente*/
+    --vermelho: #f01708;
+    --preta: #000000;
+}
+
+* {
+    /*Formatacao principal todo o index */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Elemento base */
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #f5eded;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    /*quando o mouse esta em cima*/
+    color: rgb(248, 244, 8);
+}
+
+
+/*Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('https://www.themoviedb.org/t/p/original/5DS1Xh1dxfrR1H0sqATPxkwWFzi.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo {
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--vermelho);
+}
+
+.botao {
+    background-color: rgba(0, 0, 0.50);
+    border: nome;
+    color: white;
+    padding: 15px 40px;
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    /*efeito quando o mouse passa por cima */
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+.container {
+    margin-left: 25px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carosel-filmes {
+    margin-top: 5px;
+}
