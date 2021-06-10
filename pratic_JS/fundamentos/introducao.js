@@ -20,3 +20,46 @@ const numeros = [1, 2, 4, 5, 6, 5]
 numeros.pop()// exclui o ultimo elemento
 delete numeros[0] //exclui o item no index
 
+let items = ["tea", "coffee", "milk"];
+// remove elementos da matriz de itens começando da posição 0 até o comprimento da matriz 
+items.splice(0, items.length);
+items.length = 0; // para esvaziar o Array
+
+// Verificação de múltiplas condições
+if ([1, 'one', 2, 'two'].indexOf(value) >= 0) { 
+    // Execute some code 
+}
+// Verificação de múltiplas condições
+if ([1, 'one', 2, 'two'].includes(value)) { 
+    // Execute some code 
+}
+
+// repetir uma string 5x
+'Hello '.repeat(5);
+
+//Encontre o número máximo e mínimo na matriz
+const arr = [2, 8, 15, 4]; 
+Math.max(...arr); // 15 
+Math.min(...arr); // 2
+
+//O reduce()método percorre cada elemento e retorna um único valor.
+const numbers = [5, 8, 20, 35, 10, 4];
+
+const sum = numbers.reduce((total, value) => {
+    return total + value;
+});
+
+console.log(sum); // 82
+
+// filtrar numeros pares de um array
+const numbers = [5, 6, 9, 32, 14];
+
+const even = numbers.filter((number) => {
+     return number % 2 === 0;
+});
+
+console.log(even); // [6, 32, 14]
+
+
+
+
