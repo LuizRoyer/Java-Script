@@ -1,0 +1,6 @@
+{
+    "logs": {
+        "strategy": "toMorseCode",
+        "strategy1": "noDate"
+    }
+}
