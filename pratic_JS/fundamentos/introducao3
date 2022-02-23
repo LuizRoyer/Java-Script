@@ -1,0 +1,104 @@
+// Uma funcao pode retornar/conter uma função
+function soma(a,b) {
+	return function(c){
+		console.log(a+b+c)
+	}
+}
+
+soma(2,3)(4)
+
+-----------------------------------------
+let i=0
+setInterval(()=>{
+// instrução
+console.log(i++)
+},1000) //1segundo
+
+----------------------------------------------
+const fabricantes =['Mercedes','Bmw','Audi']
+//utilizando callback
+function imprimir(nome,indice){
+console.log(`${indice+1} - ${nome}`)
+}
+
+fabricantes.forEach(imprimir)
+//saida
+ 1 - Mercedes
+ 2 - Bmw
+ 3 - Audi
+ ------------------------------------
+ const notas =[6.7,9.0,7.5,3.5,8.9,9.9]
+ 
+ let notasBaixas =notas.filter(nota=> nota<=7) 
+ console.log(notasBaixas) //[6.7, 3.5]
+ ------------------------------
+ // Funcoes Classe
+ function Carro(velocidadeMaxima=200, aceleracao=5){
+	 
+	 // atributo privado
+	 let velocidadeAtual=0
+	 
+	 //atributo publico
+	 this.acelerar= function(){
+		 velocidadeAtual+=aceleracao
+	 }
+	 
+	 //metodo publico
+	 this.getVelocidadeAtual = function(){
+		 return velocidadeAtual
+	 }
+ }
+ 
+ const uno = new Carro
+ const ferrari = new Carro(350,20)
+ -----------------------------------------
+ //factory 
+ function produto(nome, preco){
+	 return {
+		 nome,
+		 preco
+	 }
+ }
+ ---------------------
+ 
+ class Pessoa{
+	 contrutor(nome){
+		 this.nome = nome
+	 }
+	 
+	 falar(){
+		 return 'meu nome é '+ this.nome
+	 }
+ }
+ 
+ const criarPessoa=(nome)=>{
+	 return{
+		 falar:()=> return 'meu nome é '+ nome 
+	 }
+ }
+ 
+ -----------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 3 - Audi

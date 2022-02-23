@@ -1,0 +1,15 @@
+val map = HashMap<String, String>();
+  
+    init {
+        map.put("India", "Rupee")
+        map.put("UK", "Euro")
+        map.put("Japan", "Yen")
+        map.put("USA", "Dollar")
+        map.put("China", "Yuan")
+    }
+
+
+    fun getCurrencyNameOf(country: String): String {
+        return map.get(country) ?: "NA"
+    }
+}

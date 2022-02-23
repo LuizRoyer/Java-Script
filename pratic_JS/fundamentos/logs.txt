@@ -1,0 +1,28 @@
+import { LoggerService } from '@nestjs/common';
+import { appendFile } from 'fs'
+
+
+export class ApiLogger implements LoggerService {
+    log(message: string) {
+        /* your implementation */
+    }
+    error(message: string, timestamp: string) {
+        const path = require('path')
+        const fileName = path.join('src\\', 'logs.txt') 
+        appendFile(fileName, `${process.env.LOG_ENVIRONMENT} - ${timestamp} - ${message} \n`, error => {
+            if (error) {
+                console.log('Error writing to file')
+                console.error(error)
+            }
+        })
+    }
+    warn(message: string) {
+        /* your implementation */
+    }
+    debug(message: string) {
+        /* your implementation */
+    }
+    verbose(message: string) {
+        /* your implementation */
+    }
+}
